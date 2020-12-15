@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../css/land-page-anuncio.css">
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+    <div id="cabecalho" class="cabecalho">
+        <p>Cabecalho</p>
+        <div id="tamanho-janela" class="tamanho-janela">
+            <table id="tela-janela" class="tela-janela">
+                <tr>
+                    <td>
+                        <p>Tamnho da Janela</p>
+                    </td>
+                    <td>
+                        <p>Tamanho da Tela</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="window-size">
+                    </td>
+                    <td class="screen-size">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="corpo" class="corpo">
+        <p>Corpo</p>
+    </div>
+    <div id="rodape" class="rodape">
+        <p>Rodape</p>
+    </div>
+    <script>
+        sizeOfThings();
+
+        window.addEventListener('resize', function() {
+            sizeOfThings();
+            window.addEventListener('resize', function() {
+                sizeOfThings();
+            });
+        });
+    </script>
+</body>
+
+</html>

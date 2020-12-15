@@ -1,0 +1,15 @@
+.table-basica {
+    border: 1px solid black;
+}
+
+.table-basica tr {
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+.table-basica tr td {
+    border: 1px solid black;
+    background-color: crimson;
+    text-align: center;
+    padding: 10px 2px 4px 8px;
+}
